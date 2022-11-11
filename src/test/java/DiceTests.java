@@ -50,4 +50,12 @@ public class DiceTests {
             Assert.assertTrue(counter == 1000);
         }
     }
+
+    @Test
+    public void constructorTest() {
+        int expected = 2;
+        Dice dice = new Dice(2);
+        int actual = dice.numOfDice;
+        Assert.assertEquals(expected, actual);
+    }
 }
